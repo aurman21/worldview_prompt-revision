@@ -23,14 +23,14 @@ worldview/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   ├── worldview_prompts.csv            # Core benchmark (8960 × 3 models)
+│   ├── worldview_prompts.csv            # Core benchmark (8960 × 3 models) NOTE: this contains original prompts translated into English for analysis. Use ID_List to retrieve original prompts in original languages (match by ID)
 │   ├── sbert_embeddings.csv             # SBERT embeddings (precomputed)
 │   ├── clip_image_embeddings.csv        # CLIP image embeddings (precomputed)
 │   ├── vqa_descriptions.csv             # VQA descriptions (precomputed)
 │   ├── prompts_sdrun.csv                # Ablation prompt subset
 │   ├── vqa_descriptions_ablation.csv    # Ablation VQA descriptions
 │   ├── openai-revised-apr26-en-fin.csv  # GPT-Image language detection
-│   ├── ID_List.csv                      # Original prompt metadata
+│   ├── ID_List.csv                      # Original prompt metadata INCLUDING PROMPTS IN ORIGINAL LANGUAGES
 │   ├── df_unified_ALL.csv               # Unified refusal analysis data
 │   └── geo_stopwords.txt                # Geographic/artifact stopword list
 ├── analysis/
