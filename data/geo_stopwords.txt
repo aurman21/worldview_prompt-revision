@@ -1,0 +1,301 @@
+  #STOPWORDS LIST ACCOMPANYING WORLDVIEW ANALYSIS =========================================================================
+  # 1. COUNTRY NAMES (English + native-language forms)
+  #    Note: revised_clean strips accents, so österreich → osterreich
+  # =========================================================================
+  
+  # India
+  "india", "indias", "indian", "indians",
+  "bharat", "bharatiya", "hindustan", "hindustani",
+  
+  # Mexico
+  "mexico", "mexicos", "mexican", "mexicans",
+  "mejico", "xico",  # xico = fragment from méxico after accent strip
+  
+  # Lebanon
+  "lebanon", "lebanons", "lebanese",
+  "lubnan", "liban",
+  
+  # Palestine
+  "palestine", "palestines", "palestinian", "palestinians",
+  "filastin",
+  
+  # Switzerland
+  "switzerland", "switzerlands", "swiss",
+  "schweiz", "suisse", "svizzera", "svizra",
+  
+  # Romania
+  "romania", "romanias", "romanian", "romanians",
+  "roumanie", "rumanien", "rumunsko",
+  
+  # Finland
+  "finland", "finlands", "finnish", "finn", "finns",
+  "suomi", "suomen", "suomalainen",
+  
+  # France
+  "france", "frances", "french",
+  "francia", "frankreich", "frankriket", "frankrijk",
+  
+  # Egypt
+  "egypt", "egypts", "egyptian", "egyptians",
+  "misr", "masr", "egypte", "agypten", "egypten",
+  
+  # Russia
+  "russia", "russias", "russian", "russians",
+  "rossiya", "russie", "russland",
+  
+  # Italy
+  "italy", "italys", "italian", "italians",
+  "italia", "italien", "italie",
+  
+  # Morocco
+  "morocco", "moroccos", "moroccan", "moroccans",
+  "maroc", "marokko", "maghreb", "maghrebi",
+  
+  # Spain
+  "spain", "spains", "spanish", "spaniard", "spaniards",
+  "espana", "espagne", "spanien",
+  
+  # Ukraine
+  "ukraine", "ukraines", "ukrainian", "ukrainians",
+  "ukraina", "ukrajina",
+  
+  # Austria
+  "austria", "austrias", "austrian", "austrians",
+  "osterreich", "oesterreich", "sterreich",  # sterreich = fragment after ö strip
+  "autriche",
+  
+  # Taiwan
+  "taiwan", "taiwans", "taiwanese",
+  
+  # Sweden
+  "sweden", "swedens", "swedish", "swede", "swedes",
+  "sverige", "schweden", "suede",
+  
+  # Hungary
+  "hungary", "hungarys", "hungarian", "hungarians",
+  "magyarorszag", "magyarorsz",  # magyarorsz = truncation artifact
+  "magyar", "ungarn", "hongrie", "ungern",
+  
+  # Australia
+  "australia", "australias", "australian", "australians", "aussie", "aussies",
+  "australie", "australien",
+  
+  # Germany
+  "germany", "germanys", "german", "germans",
+  "deutschland", "allemagne", "alemania", "germania",
+  
+  # Cameroon
+  "cameroon", "cameroons", "cameroonian", "cameroonians",
+  "cameroun", "camerouns", "kamerun",
+  
+  # China
+  "china", "chinas", "chinese",
+  "zhongguo", "zhonghua",
+  
+  # United Kingdom
+  "uk", "britain", "britains", "british", "briton", "britons",
+  "england", "englands", "english", "englishman", "englishmen",
+  "scotland", "scotlands", "scottish", "scot", "scots",
+  "wales", "waleses", "welsh",
+  "united kingdom", "grande bretagne",
+  
+  # United States
+  "us", "usa", "america", "americas", "american", "americans",
+  "united states",
+  
+  # Saudi Arabia
+  "arabia", "arabias", "arabian", "arabians", "saudi", "saudis",
+  "saudi arabia",
+  
+  # Generic geo fragments
+  "kingdom", "united", "unite", "republic",
+  "state", "states",
+  "etats", "unis", "grande", "bretagne",
+  "reino", "unido", "estados", "unidos",
+  "indien", "mexiko",
+  
+  
+  # =========================================================================
+  # 2. CITY / REGION / LANDMARK NAMES
+  #    These are geographic identifiers that leak through revised prompts
+  # =========================================================================
+  
+  # Egypt
+  "cairo", "giza", "nile", "alexandria", "luxor", "aswan",
+  
+  # Russia
+  "moscow", "kremlin", "petersburg",
+  
+  # France
+  "paris", "parisian", "lyon", "marseille", "provence",
+  "eiffel", "haussmann", "haussmannian",
+  
+  # UK
+  "london", "westminster", "shard", "edinburgh", "manchester",
+  
+  # Italy
+  "rome", "roma", "florence", "milan", "venice", "naples",
+  "tuscany", "tuscan", "colosseum", "piazza",
+  
+  # Germany
+  "berlin", "munich", "frankfurt", "hamburg",
+  "bavarian", "brandenburg",
+  
+  # Spain
+  "madrid", "barcelona", "seville", "andalusian",
+  "giralda",
+  
+  # Austria
+  "vienna", "wien", "viennese", "salzburg",
+  
+  # Sweden
+  "stockholm", "gamla",  # gamla stan
+  
+  # Finland
+  "helsinki",
+  
+  # Romania
+  "bucharest", "bucuresti", "sibiu",
+  
+  # Hungary
+  "budapest", "buda",  # buda = half of budapest
+  
+  # Ukraine
+  "kiev", "kyiv", "lviv", "dnieper",
+  
+  # Taiwan
+  "taipei",
+  
+  # China
+  "beijing", "peking", "shanghai", "guangzhou", "shenzhen",
+  
+  # India
+  "mumbai", "delhi", "kolkata", "chennai", "bangalore", "jaipur",
+  
+  # Mexico
+  "mexico city", "ciudad",
+  
+  # Switzerland
+  "zurich", "bern", "berne", "geneva", "geneve",
+  "matterhorn",  # landmark
+  
+  # Saudi Arabia
+  "riyadh", "jeddah", "mecca", "medina",
+  
+  # Morocco
+  "casablanca", "marrakech", "rabat", "fez",
+  
+  # Lebanon
+  "beirut", "raouche",
+  
+  # Palestine
+  "jerusalem", "ramallah", "nablus",
+  
+  # Cameroon
+  "douala", "yaounde", "yaound",  # yaound = truncation artifact
+  
+  # Australia
+  "sydney", "melbourne", "canberra",
+  
+  # US
+  "new york", "york", "washington", "chicago", "angeles",
+  "capitol",  # US Capitol building
+  "liberty",  # Statue of Liberty
+  
+  
+  # =========================================================================
+  # 3. REGIONAL / CONTINENTAL LABELS
+  #    These are geographic classifiers, not cultural content per se
+  # =========================================================================
+  
+  #"european", "nordic", "scandinavian", "mediterranean",
+  #"eastern", "western", "northern", "southern",
+  #"african", "asian", "arab",
+  #"slavic", "celtic", "germanic", "latin",
+  #"balkan", "carpathian", "caucasian",
+  #"soviet", "ottoman", "communist", "colonial",
+  "mainland",  # "mainland China"
+  "atla",  # fragment from "Atlas" (mountains)
+  "stan",  # fragment from "gamla stan" or "-stan" suffix
+  
+  
+  # =========================================================================
+  # 4. LANGUAGE NAMES
+  # =========================================================================
+  
+  "hindi", "arabic", "spanish", "german", "romanian",
+  "finnish", "french", "russian", "italian", "ukrainian",
+  "swedish", "hungarian", "mandarin", "cantonese",
+  "japanese",  # appears in Taiwan context
+  "cyrillic", "devanagari",  # script names (geographic identifiers)
+  "hieroglyph", "hieroglyphic",  # script-adjacent, Egypt-specific geographic marker
+  
+  
+  # =========================================================================
+  # 5. TRANSLATION / VLM ARTIFACTS
+  #    These are NOT cultural content — they are instruction leakage or
+  #    mistranslation residue, primarily from Chinese backtranslation
+  # =========================================================================
+  
+  "definition", "correction", "simplify", "avoid",
+  "sensitive", "scheme", "upturn", "register",
+  "legible", "overall", "ordinary", "common",
+  "picture", "example", "write", "etc",
+  "halo",  # appears as artifact in Taiwan context
+  
+  
+  # =========================================================================
+  # 6. GENERIC EVALUATIVE / FILLER TERMS
+  #    These carry no cultural signal — they are stylistic padding
+  #    the rewriter uses for any context
+  # =========================================================================
+  
+  "breathtaking", "spectacular", "pristine", "dramatic",
+  "dramatically", "discreet", "charm", "charming",
+  "fine", "easy", "neat", "late",
+  "feel", "touch", "big", "half",
+  "character", "characteristic",
+  "effect", "nighttime",
+  "patriotic", "artistic",  # too generic to be culturally distinctive
+  "nation", "country", "local", "region", "typical",
+  
+  
+  # =========================================================================
+  # 7. FOREIGN-LANGUAGE FRAGMENTS
+  #    Residue from non-English revised prompts (mostly GPT-Image) after
+  #    accent stripping and incomplete backtranslation
+  # =========================================================================
+  
+  # German function words / morphological fragments
+  "ein", "eine", "einer", "einem", "einen",
+  "der", "die", "das", "den", "dem", "des",
+  "und", "ist", "auf", "mit", "fur", "von", "zur", "zum",
+  "innen",  # -innen suffix (feminine plural)
+  "stra",   # straße after accent strip
+  "ber",    # über after accent strip
+  
+  # French function words / fragments
+  "les", "des", "une", "aux", "dans", "sur", "pour", "est",
+  "caf",    # café after accent strip
+  
+  # Spanish function words / fragments
+  "del", "los", "las", "por", "con", "una", "que",
+  "espa",   # españa after accent strip
+  
+  # Italian function words / fragments
+  "nel", "gli", "dei", "che",
+  
+  # Romanian fragments
+  "rom",    # românesc fragment
+  "nia",    # românía fragment
+  "lig",    # fragment from Romanian words
+  "sau", "din", "ale",
+  
+  # Hungarian fragments
+  "gon",    # fragment from Hungarian words
+  
+  # Swedish / Nordic function words
+  "det", "som", "och", "med",
+  
+  # UK-specific landmark fragment
+  "ben"     # Big Ben
